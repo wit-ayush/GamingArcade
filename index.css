@@ -3,6 +3,7 @@
 html, body{
 	width: 100%;
 	margin: 0px;
+	background: linear-gradient(to right, #1a1a1a, #4d4d4d, #1a1a1a);
 	height: 100%
 }
 
@@ -17,14 +18,19 @@ html, body{
 }
 
 .flex-item {
-	width: 33.33%;
-	height: 100%;
+	width: 32%;
+	height: 90%;
 	text-align: center;
 }
 
 
 #flex1 {
 	background-color: black;
+	background-image: url('https://www.w3schools.com/html/pic_trulli.jpg');
+	background-size: cover;
+	margin: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -32,6 +38,11 @@ html, body{
 
 #flex2 {
 	background-color: #a9a9a9;
+	background-image: url('https://www.w3schools.com/html/pic_trulli.jpg');
+	background-size: cover;
+	margin: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -39,6 +50,11 @@ html, body{
 
 #flex3 {
 	background-color: #3a4849;
+	background-image: url('https://www.w3schools.com/html/pic_trulli.jpg');
+	background-size: cover;
+	margin: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -46,6 +62,11 @@ html, body{
 
 #flex4 {
 	background-color: #956e71;
+	background-image: url('https://www.w3schools.com/html/pic_trulli.jpg');
+	background-size: cover;
+	margin: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -53,16 +74,22 @@ html, body{
 
 #flex5 {
 	display: flex;
+	background-image: url('https://www.w3schools.com/html/pic_trulli.jpg');
+	background-size: cover;
+	margin: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
 	justify-content: center;
 	align-items: center;
 }
 
-
-
-
-
 #flex6 {
 	background-color: #766d79;
+	background-image: url('https://www.w3schools.com/html/pic_trulli.jpg');
+	background-size: cover;
+	margin: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -71,6 +98,11 @@ html, body{
 
 #flex7 {
 	background-color: #807f80;
+	background-image: url('https://www.w3schools.com/html/pic_trulli.jpg');
+	background-size: cover;
+	margin: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -78,6 +110,11 @@ html, body{
 
 #flex8 {
 	background-color: #704145;
+	background-image: url('https://www.w3schools.com/html/pic_trulli.jpg');
+	background-size: cover;
+	margin: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -85,6 +122,11 @@ html, body{
 
 #flex9 {
 	background-color: #493a49;
+	background-image: url('https://www.w3schools.com/html/pic_trulli.jpg');
+	background-size: cover;
+	margin: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
