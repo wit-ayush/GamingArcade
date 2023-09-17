@@ -38,9 +38,9 @@ html, body{
 }
 
 #flex2 {
-	background-color: #a9a9a9;
-	background-image: url('https://www.w3schools.com/html/pic_trulli.jpg');
-	background-size: cover;
+	background-color: transparent;
+	background-image: url('https://img.freepik.com/free-vector/watercolor-memory-game-cards_23-2150149082.jpg?size=626&ext=jpg');
+	background-size: contain;
 	margin: 10px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -62,9 +62,9 @@ html, body{
 }
 
 #flex4 {
-	background-color: #956e71;
-	background-image: url('https://www.w3schools.com/html/pic_trulli.jpg');
-	background-size: cover;
+	background-color: transparent;
+	background-image: url('https://ih0.redbubble.net/image.949532681.0323/raf,360x360,075,t,fafafa:ca443f4786.jpg');
+	background-size: contain;
 	margin: 10px;
 	background-position: center;
 	background-repeat: no-repeat;

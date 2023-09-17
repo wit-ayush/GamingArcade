@@ -1,0 +1,146 @@
+body{
+  background: linear-gradient(#0F2027, #203A43,#2C5364);
+  background-size: cover;
+  height: 1000px;
+  overflow: auto;
+}
+.container{
+  
+  padding-top: 6%;
+  margin: auto;
+  width: 23%;
+}
+.map{
+  padding-top: 6px;
+  padding-left: 4px;
+  z-index: 1;
+  position: relative;
+  margin: auto;
+  height: 230px;
+  background-color: transparent;
+  width: 330px;
+  border-radius: 10%;
+}
+.map2{
+  opacity: 1;
+  padding-top: 0px;
+  padding-left: 4px;
+  margin-top: -230px;
+  z-index: 1;
+  position: absolute;
+  height: 230px;
+  background-color:transparent;
+  width: 330px;
+  border-radius: 10%;	
+}
+.box{
+  display: block;
+  margin: 1%;
+  position: relative;
+  float: left;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  border-radius: 25%;
+  border:     rgba(147,137,114,1.00) dotted thick;
+}
+
+@keyframes float {
+0% {
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  transform: translatey(0px);
+}
+50% {
+  box-shadow: 0 15px 15px 0px rgba(0,0,0,0.2);
+  transform: translatey(-10px);
+}
+100% {
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  transform: translatey(0px);
+}
+}
+.gradient-border {opacity: 0.8;
+  height: 288px;
+  margin-left: -6px;
+  margin-top: -5px;
+  width: 352px;
+  
+--borderWidth: 3px;
+background-color: bisque;
+position: absolute;
+border-radius: 10%;
+  
+}
+.gradient-border:after {
+opacity: 1;
+content: '';
+position: absolute;
+top: calc(-1 * var(--borderWidth));
+left: calc(-1 * var(--borderWidth));
+height: calc(100% + var(--borderWidth) * 2);
+width: calc(100% + var(--borderWidth) * 2);
+background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+border-radius: calc(2 * var(--borderWidth));
+z-index: -1;
+background-size: 300% 300%;
+}
+
+.score{
+  margin-top:10px;
+  height: 0px;
+  background-color: transparent;
+  margin-left: 293px;
+  color:aliceblue;
+  font-size: 59px;
+  position: absolute;
+  z-index: 5;
+  border-radius: 60%;
+}
+.restart{
+  opacity: 0.9;
+  margin-top: 205px;
+  height: 0px;
+  background-color: transparent;
+  margin-left: 289px;
+  color:aliceblue;
+  font-size: 50px;
+  position: absolute;
+  z-index: 5;
+}
+.podlizka{
+  margin-top: 210px;
+  margin-left: 274px;
+  opacity: 0.3;
+  z-index: 4;
+  background: rgba(31,27,52,1.00);
+  position: absolute;
+  height: 60px;
+  border-radius:10% / 50%;
+  width: 70px;
+}
+.podlizka2{
+  margin-left: -40px;
+margin-top: -30px;
+  opacity: 0.3;
+  z-index: 1;
+  background: rgba(31,27,52,1.00);
+  position: absolute;
+  height: 330px;
+  border-radius:10% / 50%;
+  width: 420px;
+  border: solid rgb(0, 0, 0, 0.2);
+  
+}
+  .podlizka3{
+  margin-left: -40px;
+margin-top: -30px;
+  opacity: 1;
+  z-index: 0;
+  background:  black;
+  position: absolute;
+  height: 330px;
+  border-radius:10% / 50%;
+  width: 420px;
+    box-shadow: 0 25px 35px 0px rgba(0,0,0,0.6);
+    border: solid rgb(170, 50, 220, .6);		
+}
