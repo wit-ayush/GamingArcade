@@ -2,8 +2,12 @@ const holes = document.querySelectorAll(".hole");
 const scoreBoard = document.querySelector(".score");
 const moles = document.querySelectorAll(".mole");
 let lastHole;
+const btn=document.getElementById('btn');
 let timeUp = false;
 let score = 0;
+btn.addEventListener('click', ()=>{
+    btn.style.visibility='hidden';
+})
 
 function randomTime(min, max) {
     return Math.round(Math.random() * (max - min) + min);
@@ -38,7 +42,7 @@ function startGame() {
 }
 
 function bonk(e) {
-    if (!e.isTrusted) return; //cheater
+    if (!e.isTrusted) return; 
     score++;
     this.classList.remove("up");
     scoreBoard.textContent = score;
