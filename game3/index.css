@@ -74,6 +74,7 @@ button{
     margin:auto;
     padding: 4px;
     display: grid;
+    justify-content: center;
     background-color: chocolate;
     margin-top: 10px;
     color: black;
