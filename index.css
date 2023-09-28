@@ -51,8 +51,8 @@ html, body{
 
 #flex3 {
 	background-color: #3a4849;
-	background-image: url('https://www.classicgame.com/uploaded/game/thumb/minesweeper300x200.webp');
-	background-size: cover;
+	background-image: url('https://cdnb.artstation.com/p/assets/images/images/003/736/507/large/artforgame-gamedesign-whack-a-mole-2.jpg?1476952891');
+	background-size: contain;
 	margin: 10px;
 	background-position: center;
 	background-repeat: no-repeat;
