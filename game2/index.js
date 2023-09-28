@@ -64,31 +64,64 @@ var gameTimer = 1;
 var guessColor = 0;
 var previousCard = 0;
 function gameLogic(_id) {
-  $(".score").css("animation", "none")
-  $(".box").css({
-    transition: 'all 0.3s ease-in-out'
-  });
+  $(".score")
+    .css("animation", "none")
+  $(".box")
+    .css({
+      transition: 'all 0.3s ease-in-out'
+    });
   _newId = _id - 100;
   console.log(gameScore, gameTimer, guessColor, _id);
-  if (gameTimer > 2) { return };
-  $("#" + _id).css("animation", "float 0.5s ease-in");
+  if (gameTimer > 2) { 
+    return 
+  };
+  $("#" + _id)
+    .css("animation", "float 0.5s ease-in");
   //get first cards
-  if (gameTimer === 1) { $("#" + _id).css("background-color", $("#" + _newId).css("background-color")); gameTimer = 2; previousCard = _id; guessColor = $("#" + _newId).css("background-color"); return; }
+  if (gameTimer === 1) { 
+    $("#" + _id)
+      .css("background-color", $("#" + _newId)
+      .css("background-color")); 
+    gameTimer = 2; 
+    previousCard = _id; 
+    guessColor = $("#" + _newId)
+      .css("background-color"); 
+    return; 
+  }
   if (gameTimer === 2 && previousCard != _id) {
     gameTimer++;
     // guess correct
     if ($("#" + _newId).css("background-color") === guessColor) {
-      console.log("PARTY WIN"); gameScore++; $(".score").css("animation", "float 0.4s ease-in-out").text(gameScore); $("#" + _id).css("background-color", $("#" + _newId).css("background-color")); gameTimer = 1; $("#" + _id).attr("onClick", ""); $("#" + previousCard).attr("onClick", "");
+      console.log("PARTY WIN"); 
+      gameScore++; 
+      $(".score")
+        .css("animation", "float 0.4s ease-in-out")
+        .text(gameScore); 
+      $("#" + _id)
+        .css("background-color", $("#" + _newId)
+        .css("background-color")); 
+      gameTimer = 1; 
+      $("#" + _id)
+        .attr("onClick", ""); 
+      $("#" + previousCard)
+        .attr("onClick", "");
       return;
     }
     //guess wrong
     else if ($("#" + _newId).css("background-color") != guessColor) {
-      console.log("LOSE"); gameScore--; $(".score").css("animation", "float 0.1s ease-in-out").text(gameScore);
-      $("#" + _id).css("background-color", $("#" + _newId).css("background-color"));
+      console.log("LOSE"); 
+      gameScore--; 
+      $(".score")
+        .css("animation", "float 0.1s ease-in-out")
+        .text(gameScore);
+      $("#" + _id)
+        .css("background-color", $("#" + _newId)
+        .css("background-color"));
       setTimeout(function () {
         $("#" + _id).css("background-color", "rgb(247, 230, 180)");
         $("#" + previousCard).css("background-color", "rgb(247, 230, 180)"); gameTimer = 1;
-      }, 1000); return;
+      }, 1000); 
+      return;
     };
   }
   return;
