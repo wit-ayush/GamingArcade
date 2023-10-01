@@ -55,7 +55,7 @@ h1 {
 
 .hole:after {
   display: block;
-  background: url('dirt.svg') bottom center no-repeat;
+  background: url('https://svgshare.com/i/8jj.svg') bottom center no-repeat;
   background-size: cover;
   content: "";
   width: 100%;
@@ -66,7 +66,7 @@ h1 {
 }
 
 .mole {
-  background: url('mole.svg') bottom center no-repeat;
+  background: url('https://images.squarespace-cdn.com/content/v1/510feb8ce4b0c0190c38feeb/1591818308738-M5P09IFM2YZKJH7GP49M/Whack-a-mole.png') bottom center no-repeat;
   background-size: 60%;
   position: absolute;
   top: 100%;

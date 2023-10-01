@@ -1,4 +1,8 @@
 *{box-sizing: border-box;}
+h1{
+	color: white;
+	text-align: center;
+}
 
 html, body{
 	width: 100%;
